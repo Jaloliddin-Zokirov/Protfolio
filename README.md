@@ -2,23 +2,22 @@ Here’s the translation of your text to English:
 
 ---
 
-# Portfolio V5  
+# Portfolio
 Hello everyone!  
-Let me introduce myself, I’m Eki Zulfar Rachman. On this occasion, I’d like to share the portfolio website project that I’ve developed.  
+Let me introduce myself, I’m Zokirov Jaloliddin (Jony). On this occasion, I’d like to share the portfolio website project that I’ve developed.  
 
 **Tech Stack used:**  
 - ReactJS  
 - Tailwind CSS  
-- AOS  
 - Firebase  
 - Framer Motion  
 - Lucide  
 - Material UI  
 - SweetAlert2  
 
-**Website Link:**  
-[https://www.eki.my.id/](https://www.eki.my.id/)  
-
+<!-- **Website Link:**  
+[https://www.eki.my.id/](https://www.eki.my.id/)   -->
+<!-- 
 We would appreciate it if you decide to use this project. Please include credit when using it. Thank you! 🙏  
 
 ---
@@ -115,4 +114,4 @@ To configure Firebase for this project, follow these steps:
 6. **Update `firebase.js` and `firebase-comment.js` Files:**  
    - Replace the `firebaseConfig` content with your Firebase configuration.  
 
----
+--- -->
