@@ -13,7 +13,7 @@ const firebaseConfig = {
 };
 
 // Initialize with a unique name
-const app = initializeApp(firebaseConfig, 'comments-app');
+const app = initializeApp(firebaseConfig, "comments-app");
 const db = getFirestore(app);
 const storage = getStorage(app);
 

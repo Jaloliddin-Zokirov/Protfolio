@@ -15,7 +15,9 @@ const InputField = ({ field, label, icon: Icon, formData, handleChange }) => {
       ? "shadow-[0_4px_12px_rgba(99,102,241,0.4)] border-[#6366f1]"
       : "border-white/20 hover:border-[#6366f1]";
 
-    return `${baseClasses} ${hoverFocusClasses} ${isTextArea ? "h-52 pt-12" : "pl-12"}`;
+    return `${baseClasses} ${hoverFocusClasses} ${
+      isTextArea ? "h-52 pt-12" : "pl-12"
+    }`;
   };
 
   // Render input or textarea based on the field type

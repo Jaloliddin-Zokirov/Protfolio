@@ -1,12 +1,12 @@
-import React, { useState, useEffect } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
-import { Code2, Github, Globe, User } from 'lucide-react';
-import AOS from 'aos';
-import 'aos/dist/aos.css';
+import React, { useState, useEffect } from "react";
+import { motion, AnimatePresence } from "framer-motion";
+import { Code2, Github, Globe, User } from "lucide-react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const TypewriterEffect = ({ text }) => {
-  const [displayText, setDisplayText] = useState('');
-  
+  const [displayText, setDisplayText] = useState("");
+
   useEffect(() => {
     let index = 0;
     const timer = setInterval(() => {
@@ -17,7 +17,7 @@ const TypewriterEffect = ({ text }) => {
         clearInterval(timer);
       }
     }, 260);
-    
+
     return () => clearInterval(timer);
   }, [text]);
 
@@ -61,7 +61,7 @@ const WelcomeScreen = ({ onLoadingComplete }) => {
         onLoadingComplete?.();
       }, 1000);
     }, 4000);
-    
+
     return () => clearTimeout(timer);
   }, [onLoadingComplete]);
 
@@ -74,9 +74,9 @@ const WelcomeScreen = ({ onLoadingComplete }) => {
         duration: 0.8,
         ease: "easeInOut",
         when: "beforeChildren",
-        staggerChildren: 0.1
-      }
-    }
+        staggerChildren: 0.1,
+      },
+    },
   };
 
   const childVariants = {
@@ -85,9 +85,9 @@ const WelcomeScreen = ({ onLoadingComplete }) => {
       opacity: 0,
       transition: {
         duration: 0.4,
-        ease: "easeInOut"
-      }
-    }
+        ease: "easeInOut",
+      },
+    },
   };
 
   return (
@@ -101,43 +101,67 @@ const WelcomeScreen = ({ onLoadingComplete }) => {
           variants={containerVariants}
         >
           <BackgroundEffect />
-          
+
           <div className="relative min-h-screen flex items-center justify-center px-4">
             <div className="w-full max-w-4xl mx-auto">
               {/* Icons */}
-              <motion.div 
+              <motion.div
                 className="flex justify-center gap-3 sm:gap-4 md:gap-8 mb-6 sm:mb-8 md:mb-12"
                 variants={childVariants}
               >
                 {[Code2, User, Github].map((Icon, index) => (
-                  <div key={index} data-aos="fade-down" data-aos-delay={index * 200}>
+                  <div
+                    key={index}
+                    data-aos="fade-down"
+                    data-aos-delay={index * 200}
+                  >
                     <IconButton Icon={Icon} />
                   </div>
                 ))}
               </motion.div>
 
               {/* Welcome Text */}
-              <motion.div 
+              <motion.div
                 className="text-center mb-6 sm:mb-8 md:mb-12"
                 variants={childVariants}
               >
                 <h1 className="text-3xl sm:text-4xl md:text-6xl font-bold space-y-2 sm:space-y-4">
                   <div className="mb-2 sm:mb-4">
-                    <span data-aos="fade-right" data-aos-delay="200" className="inline-block px-2 bg-gradient-to-r from-white via-blue-100 to-purple-200 bg-clip-text text-transparent">
+                    <span
+                      data-aos="fade-right"
+                      data-aos-delay="200"
+                      className="inline-block px-2 bg-gradient-to-r from-white via-blue-100 to-purple-200 bg-clip-text text-transparent"
+                    >
                       Welcome
-                    </span>{' '}
-                    <span data-aos="fade-right" data-aos-delay="400" className="inline-block px-2 bg-gradient-to-r from-white via-blue-100 to-purple-200 bg-clip-text text-transparent">
+                    </span>{" "}
+                    <span
+                      data-aos="fade-right"
+                      data-aos-delay="400"
+                      className="inline-block px-2 bg-gradient-to-r from-white via-blue-100 to-purple-200 bg-clip-text text-transparent"
+                    >
                       To
-                    </span>{' '}
-                    <span data-aos="fade-right" data-aos-delay="600" className="inline-block px-2 bg-gradient-to-r from-white via-blue-100 to-purple-200 bg-clip-text text-transparent">
+                    </span>{" "}
+                    <span
+                      data-aos="fade-right"
+                      data-aos-delay="600"
+                      className="inline-block px-2 bg-gradient-to-r from-white via-blue-100 to-purple-200 bg-clip-text text-transparent"
+                    >
                       My
                     </span>
                   </div>
                   <div>
-                    <span data-aos="fade-up" data-aos-delay="800" className="inline-block px-2 bg-gradient-to-r from-indigo-600 to-purple-600 bg-clip-text text-transparent">
+                    <span
+                      data-aos="fade-up"
+                      data-aos-delay="800"
+                      className="inline-block px-2 bg-gradient-to-r from-indigo-600 to-purple-600 bg-clip-text text-transparent"
+                    >
                       Portfolio
-                    </span>{' '}
-                    <span data-aos="fade-up" data-aos-delay="1000" className="inline-block px-2 bg-gradient-to-r from-indigo-600 to-purple-600 bg-clip-text text-transparent">
+                    </span>{" "}
+                    <span
+                      data-aos="fade-up"
+                      data-aos-delay="1000"
+                      className="inline-block px-2 bg-gradient-to-r from-indigo-600 to-purple-600 bg-clip-text text-transparent"
+                    >
                       Website
                     </span>
                   </div>
@@ -145,7 +169,7 @@ const WelcomeScreen = ({ onLoadingComplete }) => {
               </motion.div>
 
               {/* Website Link */}
-              <motion.div 
+              <motion.div
                 className="text-center"
                 variants={childVariants}
                 data-aos="fade-up"

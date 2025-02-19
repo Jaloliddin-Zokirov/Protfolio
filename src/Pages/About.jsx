@@ -1,11 +1,11 @@
 import React, { useEffect, memo, useMemo } from "react";
 import {
-  FileText,
   Code,
   Award,
   Globe,
   ArrowUpRight,
   Sparkles,
+  FileText,
 } from "lucide-react";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -213,8 +213,8 @@ const AboutPage = () => {
             </p>
 
             <div className="flex flex-col lg:flex-row items-center lg:items-start gap-4 lg:gap-4 lg:px-0 w-full">
-              {/* <a
-                href="https://drive.google.com/drive/folders/1BOm51Grsabb3zj6Xk27K-iRwI1zITcpo"
+              <a
+                href="https://docs.google.com/document/d/1_x54gzAi6swKJDJSNGENcz2Z-MjnIj_R5xT7IsQerBo/export?format=pdf"
                 className="w-full lg:w-auto"
               >
                 <button
@@ -224,7 +224,7 @@ const AboutPage = () => {
                 >
                   <FileText className="w-4 h-4 sm:w-5 sm:h-5" /> Download CV
                 </button>
-              </a> */}
+              </a>
               <a href="#Portofolio" className="w-full lg:w-auto">
                 <button
                   data-aos="fade-up"

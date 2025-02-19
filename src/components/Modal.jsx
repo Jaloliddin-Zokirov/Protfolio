@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import { Eye, ArrowRight, ExternalLink } from 'lucide-react';
+import React, { useState } from "react";
+import { Eye, ArrowRight, ExternalLink } from "lucide-react";
 
 const ProjectCardModal = ({ title, description, link }) => {
   const [isOpen, setIsOpen] = useState(false);
