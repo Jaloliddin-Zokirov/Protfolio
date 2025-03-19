@@ -3,10 +3,75 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="/android-chrome-192x192.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="512x512"
+      href="/android-chrome-512x512.png"
+    />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon.ico" />
+    <link rel="manifest" href="/site.webmanifest" />
+
+    <!-- Open Graph -->
+    <meta
+      property="og:title"
+      content="Jaloliddin Zokirov | Frontend Developer"
+    />
+    <meta
+      property="og:description"
+      content="Frontend developer. Check out the portfolio, blogs, and certifications."
+    />
+    <meta property="og:image" content="https://jaloliddindev.uz/JZ.png" />
+    <meta property="og:url" content="https://jaloliddindev.uz/" />
+    <meta property="og:type" content="website" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="Jaloliddin Zokirov | Frontend Developer"
+    />
+    <meta
+      name="twitter:description"
+      content="Frontend developer. Check out the portfolio and blogs."
+    />
+    <meta name="twitter:image" content="https://jaloliddindev.uz/JZ.png" />
+
+    <meta
+      name="description"
+      content="Jaloliddin Zokirov - Frontend developer. Portfolio, projects, certifications, and blogs. Check out my work and skills."
+    />
     <title>Zokirov Jaloliddin - Profil Pengembang Front-End Web</title>
   </head>
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Jaloliddin Zokirov",
+        "url": "https://jaloliddindev.uz",
+        "sameAs": [
+          "https://www.linkedin.com/in/jaloliddin-zokirov-4869b0276",
+          "https://t.me/Zokirov_Jaloliddin"
+        ],
+        "jobTitle": "Frontend Developer",
+        "worksFor": {
+          "@type": "Organization",
+          "name": "Audio Video"
+        }
+      }
+    </script>
   </body>
 </html>
