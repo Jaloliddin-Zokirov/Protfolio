@@ -49,7 +49,7 @@ const ContactPage = () => {
 
       // Submit form
       const response = await axios.post(
-        `https://formsubmit.co/jaloliddinzokirov.dev@gmail.com`,
+        `https://formsubmit.co/contact@jaloliddindev.uz`,
         formData,
         {
           headers: {
@@ -142,7 +142,7 @@ const ContactPage = () => {
             </div>
 
             <form
-              // action="https://formsubmit.co/jaloliddinzokirov.dev@gmail.com"
+              // action="https://formsubmit.co/contact@jaloliddindev.uz"
               // method="POST"
               onSubmit={(evt) => handleSubmit(evt)}
               className="space-y-6"
